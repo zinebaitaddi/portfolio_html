@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+
+    <!-- En-tête -->
+    <header>
+        <nav>
+            <ul style="list-style-type: none; padding: 0; background-color: #4CAF50; text-align: center;">
+                <li style="display: inline; margin: 10px;">
+                    <a href="#home" style="color: white; text-decoration: none;">Accueil</a>
+                </li>
+                <li style="display: inline; margin: 10px;">
+                    <a href="#about" style="color: white; text-decoration: none;">À propos</a>
+                </li>
+                <li style="display: inline; margin: 10px;">
+                    <a href="#resume" style="color: white; text-decoration: none;">CV</a>
+                </li>
+                <li style="display: inline; margin: 10px;">
+                    <a href="#contact" style="color: white; text-decoration: none;">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+
+        <!-- Section Accueil -->
+        <section id="home" style="display: flex; align-items: center; justify-content: center; padding: 50px; background-color: #e9f5e9;">
+            <figure style="
+                width: 250px;
+                height: 290px;
+                background: linear-gradient(to bottom, #2e7d32, #81c784);
+                clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+                position: relative;
+                margin-right: 30px;">
+                <img src="my-photo.jpg" alt="Photo de zineb ait addi, développeuse web" style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+                    position: absolute;
+                    top: 0;
+                    left: 0;">
+            </figure>
+
+            <article style="max-width: 500px; text-align: left;">
+                <h1 style="font-size: 40px; color: #333; margin-bottom: 20px;">Bienvenue sur mon Portfolio</h1>
+                <p style="font-size: 20px; color: #555; line-height: 1.6;">
+                    Je suis ravie de vous accueillir dans cet espace où je partage mes compétences, mes projets et mes expériences. Explorez les différentes sections pour découvrir mes réalisations et en savoir plus sur moi !
+                </p>
+            </article>
+        </section>
+
+        <!-- Section À propos -->
+        <section id="about" style="padding: 50px; background-color: #f4f4f4;">
+            <header>
+                <h2 style="font-size: 30px; color: #2e4d79;">À propos de moi</h2>
+            </header>
+            <p style="font-size: 18px; color: #444;">Je suis une développeuse web passionnée avec une expérience dans la création de sites modernes, réactifs et conviviaux. Mon expertise inclut HTML, CSS, JavaScript et divers frameworks.</p>
+
+            <blockquote style="font-style: italic; color: #555;">
+                "Un développeur qui n'échoue jamais est un développeur qui n'apprend pas."
+            </blockquote>
+
+            <blockquote style="font-style: italic; color: #555;">
+                "La programmation, c'est le moyen par lequel nous transformons nos rêves en réalité digitale."
+            </blockquote>
+        </section>
+
+        <!-- Section CV -->
+        <section id="resume" style="padding: 50px; background-color: #e9f5e9;">
+            <header>
+                <h2 style="font-size: 30px; color: #2e4d79;">CV</h2>
+            </header>
+            <table border="1" style="margin: 0 auto; width: 80%; border-collapse: collapse;">
+                <thead>
+                    <tr>
+                        <th style="padding: 15px; background-color: #4CAF50; color: white;">Année</th>
+                        <th style="padding: 15px; background-color: #4CAF50; color: white;">formation </th>
+                        <th style="padding: 15px; background-color: #4CAF50; color: white;">Entreprise</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 15px;">2025</td>
+                        <td style="padding: 15px;">developement web</td>
+                        <td style="padding: 15px;">GOMYCODE</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 15px;">2024</td>
+                        <td style="padding: 15px;">robotique</td>
+                        <td style="padding: 15px;">YANE CODE ACADEMY</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact" style="padding: 50px; background-color: #f4f4f4;">
+            <header>
+                <h2 style="font-size: 30px; color: #2e4d79;">Contactez-moi</h2>
+            </header>
+            <form action="/submit" method="post" style="max-width: 600px; margin: 0 auto;">
+                <label for="name" style="font-size: 18px;">Nom :</label><br>
+                <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; margin: 10px 0; font-size: 16px;"><br>
+
+                <label for="email" style="font-size: 18px;">Email :</label><br>
+                <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; margin: 10px 0; font-size: 16px;"><br>
+
+                <label for="message" style="font-size: 18px;">Message :</label><br>
+                <textarea id="message" name="message" rows="4" required style="width: 100%; padding: 10px; font-size: 16px; margin: 10px 0;"></textarea><br>
+
+                <button type="submit" style="padding: 10px 20px; background-color: #4CAF50; color: white; font-size: 18px; border: none; cursor: pointer;">Envoyer</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Pied de page -->
+    <footer style="padding: 20px; text-align: center; background-color: #2e4d79; color: white;">
+        <p>&copy; 2025 Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
